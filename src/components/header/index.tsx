@@ -4,7 +4,7 @@ export function Header() {
   return (
     <>
       <div className={styles.wrapper}>
-        <div className={styles.logo}>event.com</div>
+        <div className={styles.logo}>event.io</div>
       </div>
     </>
   );
