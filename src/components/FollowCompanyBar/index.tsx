@@ -4,7 +4,7 @@ export function FollowCompanies() {
   return (
     <>
       <div style={{ color: "white", fontSize: "1.5rem", fontWeight: "600" }}>
-        Companies to follow
+        People to follow
       </div>
       <div className={styles.wrapper}>
         <div className={styles.gridContainer}>

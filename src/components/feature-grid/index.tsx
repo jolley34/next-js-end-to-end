@@ -1,3 +1,5 @@
+import { MdVerified } from "react-icons/md";
+
 import CountdownBar from "../CountdownBar";
 import { NotificationBell } from "../Notification";
 import styles from "./FeatureGrid.module.css";
@@ -18,7 +20,25 @@ export function FeatureGrid() {
                 ></img>
                 <div className={styles.contentWrapper}>
                   <div className={styles.spaceBetween}>
-                    <div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "0.5rem",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          gap: "0.5rem",
+                          alignItems: "center",
+                        }}
+                      >
+                        <div className={styles.eventTitle}>Tesla</div>
+
+                        <MdVerified className={styles.icon} />
+                      </div>
+
                       <div className={styles.eventTitle}>Tesla Roadster</div>
                       <div className={styles.eventDescription}>
                         Tesla Roadster release date is here, are you ready for

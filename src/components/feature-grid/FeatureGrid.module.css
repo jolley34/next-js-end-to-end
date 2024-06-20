@@ -13,6 +13,11 @@
   font-weight: 700;
 }
 
+.icon {
+  color: rgb(86, 151, 226);
+  font-size: 16px;
+}
+
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -62,7 +67,7 @@
 }
 
 .card:hover .img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .eventTitle {
