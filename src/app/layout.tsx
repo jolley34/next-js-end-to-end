@@ -1,5 +1,6 @@
-import Header from "@/components/header/header";
-import GlobalStyle from "@/styles/globalstyles";
+import { Header } from "@/components/header";
+import styles from "../styles/GlobalStyles.module.css";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -16,8 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <GlobalStyle />
+    <html lang="en" className={styles.body}>
       <body className={`${inter.className}`}>
         <Header />
         <main>{children}</main>

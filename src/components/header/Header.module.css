@@ -1,0 +1,15 @@
+.logo {
+  color: lightblue;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  padding: 4rem 6rem;
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

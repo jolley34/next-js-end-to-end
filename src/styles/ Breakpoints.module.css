@@ -1,0 +1,26 @@
+:root {
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+@media (min-width: var(--breakpoint-sm)) {
+  .sm {
+  }
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .md {
+  }
+}
+
+@media (min-width: var(--breakpoint-lg)) {
+  .lg {
+  }
+}
+
+@media (min-width: var(--breakpoint-xl)) {
+  .xl {
+  }
+}
