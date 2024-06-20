@@ -8,8 +8,10 @@
   padding: 2rem 6rem;
   position: sticky;
   top: 0;
-  background-color: rgb(21, 21, 21);
+  background-color: rgba(21, 21, 21, 0.824);
   z-index: 5000;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgb(42, 42, 42);
 }
 
 .spaceBetween {

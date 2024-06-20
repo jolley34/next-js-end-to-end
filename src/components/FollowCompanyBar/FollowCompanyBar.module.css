@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+}
+
+.gridContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.img {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+  border-radius: 20px;
+  border: 1px solid rgb(13, 13, 13);
+}
