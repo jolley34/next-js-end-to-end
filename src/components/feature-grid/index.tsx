@@ -1,4 +1,5 @@
 import CountdownBar from "../CountdownBar";
+import { NotificationBell } from "../Notification";
 import styles from "./FeatureGrid.module.css";
 
 export function FeatureGrid() {
@@ -16,10 +17,15 @@ export function FeatureGrid() {
                   className={styles.img}
                 ></img>
                 <div className={styles.contentWrapper}>
-                  <div className={styles.eventTitle}>Tesla Roadster</div>
-                  <div className={styles.eventDescription}>
-                    Tesla Roadster release date is here, are you ready for the
-                    future?
+                  <div className={styles.spaceBetween}>
+                    <div>
+                      <div className={styles.eventTitle}>Tesla Roadster</div>
+                      <div className={styles.eventDescription}>
+                        Tesla Roadster release date is here, are you ready for
+                        the future?
+                      </div>
+                    </div>
+                    <NotificationBell />
                   </div>
                 </div>
               </div>
