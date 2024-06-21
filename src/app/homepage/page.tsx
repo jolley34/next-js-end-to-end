@@ -1,7 +1,8 @@
 "use client";
 
-import { FeatureGrid } from "@/src/components/feature-grid";
+import { FeatureGrid } from "@/src/components/Feature-grid";
 import { FollowCompanies } from "@/src/components/FollowCompanyBar";
+import { HypedGrid } from "@/src/components/Hyped-grid";
 
 export default function Homepage() {
   return (
@@ -10,6 +11,7 @@ export default function Homepage() {
         <div style={{ display: "flex", flexDirection: "column", gap: "3rem" }}>
           <FeatureGrid />
           <FollowCompanies />
+          <HypedGrid />
         </div>
       </div>
     </>

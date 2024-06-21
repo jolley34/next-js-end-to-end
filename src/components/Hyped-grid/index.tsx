@@ -1,16 +1,28 @@
 import { MdVerified } from "react-icons/md";
 
 import CountdownBar from "../CountdownBar";
-import { LikeButton } from "../Like";
 import { NotificationBell } from "../Notification";
-import styles from "./FeatureGrid.module.css";
+import styles from "./HypedGrid.module.css";
 
-export function FeatureGrid() {
+export function HypedGrid() {
   return (
     <>
       <div className={styles.wrapper}>
         <div className={styles.flex}>
-          <div className={styles.mainTitle}>Featured Events</div>
+          <div className={styles.mainTitle}>Most hyped Events</div>
+          <div style={{ display: "flex", gap: "1rem" }}>
+            <div className={styles.subTitle}>Today</div>
+            <div style={{ color: "gray" }} className={styles.subTitle}>
+              This week
+            </div>
+            <div style={{ color: "gray" }} className={styles.subTitle}>
+              This month
+            </div>
+            <div style={{ color: "gray" }} className={styles.subTitle}>
+              This year
+            </div>
+          </div>
+
           <div className={styles.gridContainer}>
             <div className={styles.card}>
               <div className={styles.cardWrapper}>
@@ -46,10 +58,7 @@ export function FeatureGrid() {
                         the future?
                       </div>
                     </div>
-                    <div style={{ display: "flex", gap: "0.5rem" }}>
-                      <LikeButton />
-                      <NotificationBell />
-                    </div>
+                    <NotificationBell />
                   </div>
                 </div>
               </div>
