@@ -1,7 +1,7 @@
 "use client";
 
-import { FollowCompanies } from "@/components/FollowCompanyBar";
-import { FeatureGrid } from "@/components/feature-grid";
+import { FeatureGrid } from "@/src/components/feature-grid";
+import { FollowCompanies } from "@/src/components/FollowCompanyBar";
 
 export default function Homepage() {
   return (
