@@ -7,10 +7,30 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Event {
+  id          String   @id @default(cuid())
+  userId      String
+  createdAt   DateTime @default(now())
+  name        String
+  description String
+  image       String
+  video       String
+
+  categories Category[]
+  user       User       @relation(fields: [userId], references: [id])
+}
+
+model Category {
+  id   String @id @default(cuid())
+  name String @unique
+
+  events Event[]
+}
+
 model User {
   id            String    @id @default(cuid())
   username      String?   @unique
-  isAdmin       Boolean   @default(false)
+  isVerified    Boolean   @default(false)
   password      String?
   name          String?
   email         String    @unique
@@ -21,6 +41,7 @@ model User {
 
   accounts Account[]
   sessions Session[]
+  Event    Event[]
 }
 
 model Account {
