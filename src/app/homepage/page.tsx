@@ -1,6 +1,4 @@
-"use client";
-
-import { FeatureGrid } from "@/src/components/Feature-grid";
+import FeatureGrid from "@/src/components/Feature-grid";
 import { FollowCompanies } from "@/src/components/FollowCompanyBar";
 import { HypedGrid } from "@/src/components/Hyped-grid";
 

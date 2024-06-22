@@ -7,6 +7,7 @@ CREATE TABLE "Event" (
     "description" TEXT NOT NULL,
     "image" TEXT NOT NULL,
     "video" TEXT NOT NULL,
+    "isFeatured" BOOLEAN NOT NULL DEFAULT false,
 
     CONSTRAINT "Event_pkey" PRIMARY KEY ("id")
 );

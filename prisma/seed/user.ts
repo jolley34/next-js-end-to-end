@@ -9,9 +9,9 @@ export async function seedUsers(db: PrismaClient) {
       name: "Hello",
       email: "jolle@gmail.com",
       isAdmin: true,
-      isVerified: false,
+      isVerified: true,
       image: "",
-      username: "jolle",
+      username: "Tesla",
       password: "secret",
     },
   });
@@ -24,13 +24,29 @@ export async function seedUsers(db: PrismaClient) {
       name: "Bye",
       email: "noob@gmail.com",
       isAdmin: false,
-      isVerified: true,
+      isVerified: false,
       image: "",
-      username: "nooben",
+      username: "SpaceX",
       password: "imnotnoob",
+    },
+  });
+
+  const user3 = await db.user.upsert({
+    where: { id: "clwgbsder00089q814t1jch2rwera" },
+    update: {},
+    create: {
+      id: "clwgbsder00089q814twerwrqweqweqe1jch2a",
+      name: "netflixorso",
+      email: "netflix@gmail.com",
+      isAdmin: false,
+      isVerified: false,
+      image: "",
+      username: "Netflix",
+      password: "imnotnetflix",
     },
   });
 
   console.log({ user1 });
   console.log({ user2 });
+  console.log({ user3 });
 }

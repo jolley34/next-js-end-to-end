@@ -11,6 +11,7 @@
 .wrapper {
   background-color: rgba(0, 0, 0, 0.396);
   padding: 1rem;
+
   border-radius: 10px;
   backdrop-filter: blur(20px);
   display: flex;

@@ -16,6 +16,7 @@ model Event {
   description String
   image       String
   video       String
+  isFeatured  Boolean  @default(false)
 
   categories Category[]
   user       User       @relation(fields: [userId], references: [id])

@@ -1,76 +1,45 @@
-import { MdVerified } from "react-icons/md";
+import { db } from "@/prisma/db";
+import { Card } from "../Card";
+import { FeatureGridLayout } from "./layout";
 
-import CountdownBar from "../CountdownBar";
-import { LikeButton } from "../Like";
-import { NotificationBell } from "../Notification";
-import styles from "./FeatureGrid.module.css";
+interface TypesProps {
+  id: string;
+}
 
-export function FeatureGrid() {
+export default async function FeatureGrid({ id }: TypesProps) {
+  const events = await db.event.findMany({
+    where: {
+      id,
+    },
+    include: {
+      user: true,
+    },
+  });
+
   return (
     <>
-      <div className={styles.wrapper}>
-        <div className={styles.flex}>
-          <div className={styles.mainTitle}>Featured Events</div>
-          <div className={styles.gridContainer}>
-            <div className={styles.card}>
-              <div className={styles.cardWrapper}>
-                <CountdownBar />
-                <img
-                  src="https://www.hdcarwallpapers.com/walls/2020_tesla_roadster_4k_3-HD.jpg"
-                  className={styles.img}
-                ></img>
-                <div className={styles.contentWrapper}>
-                  <div className={styles.spaceBetween}>
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "0.5rem",
-                      }}
-                    >
-                      <div
-                        style={{
-                          display: "flex",
-                          gap: "0.5rem",
-                          alignItems: "center",
-                        }}
-                      >
-                        <div className={styles.eventTitle}>Tesla</div>
+      <FeatureGridLayout />
 
-                        <MdVerified className={styles.icon} />
-                      </div>
-
-                      <div className={styles.eventTitle}>Tesla Roadster</div>
-                      <div className={styles.eventDescription}>
-                        Tesla Roadster release date is here, are you ready for
-                        the future?
-                      </div>
-                    </div>
-                    <div style={{ display: "flex", gap: "0.5rem" }}>
-                      <LikeButton />
-                      <NotificationBell />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <div className={styles.cardWrapper}>
-                <CountdownBar />
-                <img
-                  src="https://i.cbc.ca/1.7225575.1717611712!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/starship.jpg"
-                  className={styles.img}
-                ></img>
-                <div className={styles.contentWrapper}>
-                  <div className={styles.eventTitle}>SpaceX Starship</div>
-                  <div className={styles.eventDescription}>
-                    Next launch is taking place soon..
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div
+        style={{
+          display: "grid",
+          gridAutoFlow: "column",
+          gridAutoColumns: "45%",
+          overflowX: "scroll",
+          scrollSnapType: "mandatory",
+          gap: "2rem",
+        }}
+      >
+        {events.map((event) => (
+          <Card
+            isVerified
+            key={event.id}
+            title={event.title}
+            description={event.description}
+            image={event.image}
+            user={event.user?.username}
+          />
+        ))}
       </div>
     </>
   );
