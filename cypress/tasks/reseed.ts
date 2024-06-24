@@ -7,17 +7,19 @@ export async function reseed() {
   }
 
   // ============= RESET ============= //
-  await db.post.deleteMany({});
+  await db.event.deleteMany({});
   // Ta bort från alla tabeller
 
   // ============== SEED ============= //
-  await db.post.upsert({
-    where: { id: 1 },
+  await db.event.upsert({
+    where: { id: "" },
     update: {},
     create: {
-      id: 1,
+      id: "1",
       title: "Hello World",
-      content: "This is the first post!",
+      description: "This is the first post!",
+      image: "",
+      video: "",
     },
   });
 
