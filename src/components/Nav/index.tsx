@@ -20,7 +20,7 @@ export function Nav() {
           type="text"
           placeholder="search event/users..."
         />
-        <div style={{ display: "flex", alignItems: "center", gap: "3rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           {session ? (
             <>
               <div
