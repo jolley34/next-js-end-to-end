@@ -37,7 +37,7 @@ export default async function FeatureGrid({ id }: TypesProps) {
             title={event.title}
             description={event.description}
             image={event.image}
-            user={event.user?.username}
+            user={event.user?.name}
           />
         ))}
       </div>
