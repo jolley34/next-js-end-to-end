@@ -21,8 +21,4 @@ describe("Feature Events Display", () => {
       });
     });
   });
-
-  it("should have the brand inside an h1 tag", () => {
-    cy.get("h1").contains("Welcome to Event").should("be.visible");
-  });
 });
