@@ -8,7 +8,7 @@ interface CardProps {
   title: string;
   description: string;
   image: string;
-  user: string; // Assuming user is a string identifier or name
+  user: any;
   isVerified: boolean;
 }
 
@@ -30,7 +30,6 @@ export function Card({
               <div className={styles.spaceBetween}>
                 <div className={styles.userWrapper}>
                   <div className={styles.user}>
-                    {user}{" "}
                     {isVerified && <MdVerified className={styles.icon} />}
                   </div>
                 </div>
