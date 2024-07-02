@@ -13,6 +13,10 @@
   font-weight: 700;
 }
 
+.user {
+  color: white;
+}
+
 .icon {
   color: rgb(86, 151, 226);
   font-size: 16px;

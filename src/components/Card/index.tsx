@@ -20,42 +20,63 @@ export function Card({
   isVerified,
 }: CardProps) {
   return (
-    <div className={styles.wrapper} data-cy="featured-event">
-      <div className={styles.flex}>
-        <div className={styles.card}>
-          <div className={styles.cardWrapper}>
-            <CountdownBar />
-            <img src={image} className={styles.img} alt="Event Image" />
-            <div className={styles.contentWrapper}>
-              <div className={styles.spaceBetween}>
-                <div className={styles.userWrapper}>
-                  <div className={styles.user}>
-                    {isVerified && <MdVerified className={styles.icon} />}
-                  </div>
-                </div>
-                <div className={styles.eventDetails}>
-                  <div className={styles.eventTitle} data-cy="event-title">
-                    {title}
-                  </div>
+    <>
+      <div className={styles.wrapper} data-cy="featured-event">
+        <div className={styles.flex}>
+          <div className={styles.card}>
+            <div className={styles.cardWrapper}>
+              <CountdownBar />
+              <img src={image} className={styles.img} alt="Event Image" />
+              <div className={styles.contentWrapper}>
+                <div className={styles.spaceBetween}>
                   <div
-                    className={styles.eventDescription}
-                    data-cy="event-description"
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "0.5rem",
+                    }}
                   >
-                    {description}
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "1rem",
+                        alignItems: "center",
+                      }}
+                    >
+                      <div className={styles.user}>{user}</div>
+                      {isVerified && <MdVerified className={styles.icon} />}
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "0.5rem",
+                      }}
+                    >
+                      <div className={styles.eventTitle} data-cy="event-title">
+                        {title}
+                      </div>
+                      <div
+                        className={styles.eventDescription}
+                        data-cy="event-description"
+                      >
+                        {description}
+                      </div>
+                      <div style={{ color: "white" }}>
+                        <span>34,350</span> likes
+                      </div>
+                    </div>
                   </div>
-                  <div className={styles.likesCount}>
-                    <span>34,350</span> likes
+                  <div style={{ display: "flex", gap: "0.5rem" }}>
+                    <LikeButton />
+                    <NotificationBell />
                   </div>
-                </div>
-                <div className={styles.actions}>
-                  <LikeButton />
-                  <NotificationBell />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
