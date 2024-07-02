@@ -39,7 +39,7 @@ export function Card({
                     <div
                       style={{
                         display: "flex",
-                        gap: "1rem",
+                        gap: "0.5rem",
                         alignItems: "center",
                       }}
                     >
