@@ -1,6 +1,5 @@
 import { auth } from "@/auth";
 import { getAllCategories } from "@/src/actions/Events";
-import UploadEventButton from "@/src/components/CreateEvent/components/UploadEventButton";
 import EventForm from "@/src/components/CreateEvent/form";
 import FeatureGrid from "@/src/components/Feature-grid";
 import { FollowCompanies } from "@/src/components/FollowCompanyBar";
@@ -13,8 +12,7 @@ export default async function Homepage() {
   return (
     <div style={{ padding: "4rem 6rem" }}>
       <div style={{ display: "flex", flexDirection: "column", gap: "3rem" }}>
-        {session?.user && <UploadEventButton />}
-        <EventForm categories={categories} />
+        {session?.user && <EventForm categories={categories} />}
         <FeatureGrid />
         <FollowCompanies />
         <HypedGrid />

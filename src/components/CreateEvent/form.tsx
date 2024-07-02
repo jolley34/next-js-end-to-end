@@ -43,7 +43,9 @@ export default function EventForm({ categories }: Props) {
       }}
     >
       {/* Title Input */}
-      <label htmlFor="title">Title</label>
+      <label style={{ color: "white" }} htmlFor="title">
+        Title
+      </label>
       <input
         id="title"
         type="text"
@@ -59,7 +61,9 @@ export default function EventForm({ categories }: Props) {
       )}
 
       {/* Description Input */}
-      <label htmlFor="description">Description</label>
+      <label style={{ color: "white" }} htmlFor="description">
+        Description
+      </label>
       <input
         id="description"
         type="text"
@@ -75,7 +79,9 @@ export default function EventForm({ categories }: Props) {
       )}
 
       {/* Image URL Input */}
-      <label htmlFor="image">Image URL</label>
+      <label htmlFor="image" style={{ color: "white" }}>
+        Image URL
+      </label>
       <input
         id="image"
         type="url"
@@ -92,7 +98,9 @@ export default function EventForm({ categories }: Props) {
       )}
 
       {/* Video URL Input */}
-      <label htmlFor="video">Video URL</label>
+      <label style={{ color: "white" }} htmlFor="video">
+        Video URL
+      </label>
       <input
         id="video"
         type="url"
@@ -108,10 +116,13 @@ export default function EventForm({ categories }: Props) {
       )}
 
       {/* Category Select Input */}
-      <label>Categories</label>
+      <label style={{ color: "white" }}>Categories</label>
       <div style={{ display: "flex", flexDirection: "column" }}>
         {categories.map((category) => (
-          <label key={category.id} style={{ marginBottom: "0.5rem" }}>
+          <label
+            key={category.id}
+            style={{ marginBottom: "0.5rem", color: "white" }}
+          >
             <input
               type="checkbox"
               {...register("categories", {

@@ -1,0 +1,287 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/CountdownBar/CountdownBar.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.CountdownBar_wrapper__bQve2 {
+  position: absolute;
+  top: 0;
+  padding: 1rem 0rem;
+  color: white;
+  z-index: 1000;
+  font-weight: 700;
+  background-color: rgb(10, 10, 10);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.CountdownBar_innerWrapper__8FBt8 {
+  display: flex;
+  gap: 2rem;
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Like/Like.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Like_icon__ZeqRv {
+  color: white;
+  font-size: 24px;
+}
+
+.Like_text__oQh76 {
+  color: white;
+  font-size: 12px;
+}
+
+.Like_wrapper__SDHYt {
+  background-color: rgba(0, 0, 0, 0.396);
+  padding: 1rem;
+
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: ease 0.3s;
+}
+
+.Like_wrapper__SDHYt:hover {
+  background-color: rgba(27, 27, 27, 0.424);
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Notification/Notification.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+.Notification_icon__Ul6SC {
+  color: white;
+  font-size: 24px;
+}
+
+.Notification_text__KwGSp {
+  color: white;
+  font-size: 12px;
+}
+
+.Notification_wrapper__f1tYu {
+  background-color: rgba(0, 0, 0, 0.396);
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: ease 0.3s;
+}
+
+.Notification_wrapper__f1tYu:hover {
+  background-color: rgba(27, 27, 27, 0.424);
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Card/Card.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************/
+.Card_wrapper__r1iDw {
+}
+
+.Card_flex__opby1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Card_mainTitle__qAnCd {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Card_icon__uP_b5 {
+  color: rgb(86, 151, 226);
+  font-size: 16px;
+}
+
+.Card_card__RlVbj {
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.736);
+}
+
+.Card_cardWrapper__u_Xcg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Card_contentWrapper__IagnY {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.Card_spaceBetween__Vbhf5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Card_img__VJ0nd {
+  width: 100%;
+  height: 400px;
+
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.Card_card__RlVbj:hover .Card_img__VJ0nd {
+  transform: scale(1.05);
+}
+
+.Card_eventTitle__eh6vy {
+  color: white;
+  font-weight: 600;
+}
+
+.Card_eventDescription__udnFs {
+  color: white;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/FollowCompanyBar/FollowCompanyBar.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
+.FollowCompanyBar_wrapper__I808Y {
+  display: flex;
+}
+
+.FollowCompanyBar_gridContainer___NXhH {
+  display: flex;
+  gap: 2rem;
+}
+
+.FollowCompanyBar_card__Te_IP {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  background-color: rgba(228, 228, 228, 0.093);
+  border-radius: 20px;
+
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.736);
+}
+
+.FollowCompanyBar_img__AaBxO {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+
+  border-radius: 20px;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Hyped-grid/HypedGrid.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.HypedGrid_wrapper__TJAaH {
+}
+
+.HypedGrid_flex__oVsVv {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.HypedGrid_mainTitle__NkFt0 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.HypedGrid_subTitle__JCz7M {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.HypedGrid_icon__QTd4_ {
+  color: rgb(86, 151, 226);
+  font-size: 16px;
+}
+
+.HypedGrid_gridContainer__KZLXo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+.HypedGrid_card__51yC_ {
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.736);
+}
+
+.HypedGrid_cardWrapper__3EtMF {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.HypedGrid_contentWrapper__FQ0Ap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.HypedGrid_spaceBetween__Uw8Wl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HypedGrid_img__WWPZc {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.HypedGrid_card__51yC_:hover .HypedGrid_img__WWPZc {
+  transform: scale(1.05);
+}
+
+.HypedGrid_eventTitle__xXOWi {
+  color: white;
+  font-weight: 600;
+}
+
+.HypedGrid_eventDescription__OHyia {
+  color: white;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+

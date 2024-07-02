@@ -9,7 +9,7 @@ interface TypesProps {
 export default async function FeatureGrid({ id }: TypesProps) {
   const events = await db.event.findMany({
     where: {
-      id,
+      isFeatured: true,
     },
     include: {
       user: true,
@@ -29,6 +29,7 @@ export default async function FeatureGrid({ id }: TypesProps) {
           scrollSnapType: "mandatory",
           gap: "2rem",
         }}
+        data-cy="featured-events-grid"
       >
         {events.map((event) => (
           <Card

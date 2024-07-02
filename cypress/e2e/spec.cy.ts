@@ -1,26 +1,28 @@
-describe("template spec", () => {
+describe("Feature Events Display", () => {
   beforeEach(() => {
     cy.task("reseed");
+    cy.visit("/");
   });
 
-  it("should display random value on client", () => {
-    cy.visit("/", {
-      onBeforeLoad(win) {
-        // Stub your functions here
-        cy.stub(win.Math, "random").returns(0.8);
-      },
-    });
+  it("should display the featured events grid", () => {
+    cy.get('[data-cy="featured-events-grid"]').should("be.visible");
+  });
 
-    cy.get("h6").should("have.text", "0.8");
+  it("should display at least one featured event", () => {
+    cy.get('[data-cy="featured-event"]').should("have.length.at.least", 1);
+  });
+
+  it("should display event details for each featured event", () => {
+    cy.get('[data-cy="featured-event"]').each(($event) => {
+      cy.wrap($event).within(() => {
+        cy.get(".event-title").should("not.be.empty");
+        cy.get(".event-description").should("not.be.empty");
+        cy.get("img").should("be.visible");
+      });
+    });
   });
 
   it("should have the brand inside an h1 tag", () => {
-    cy.visit("/");
-    // Om vi skriver så här så säkerställer
-    // vi att det är en h1
-    cy.get("h1").contains("Welcome to my Blog").should("be.visible");
-
-    // Det gör vi inte här, spelar det någon roll?
-    cy.getById("title").contains("Welcome to my Blog").should("be.visible");
+    cy.get("h1").contains("Welcome to Event").should("be.visible");
   });
 });
