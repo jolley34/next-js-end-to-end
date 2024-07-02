@@ -9,7 +9,7 @@ interface TypesProps {
 export default async function FeatureGrid({ id }: TypesProps) {
   const events = await db.event.findMany({
     where: {
-      isFeatured: true,
+      id,
     },
     include: {
       user: true,
