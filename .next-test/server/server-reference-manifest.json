@@ -1,24 +1,24 @@
 {
   "node": {
-    "38c6aa71132a585973dadedc2e67c59600d47b27": {
+    "11928d03938a63997a6bf40c9095492a19b6c72e": {
       "workers": {
-        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ferlandssonjoel%2FDesktop%2Fnext-js-end-to-end%2Fsrc%2Factions%2FEvents%2Findex.ts%22%2C%5B%22getAllCategories%22%2C%22getEventsByCategory%22%2C%22AddNewEvent%22%5D%5D%5D&__client_imported__=!"
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ferlandssonjoel%2FDocuments%2FProjects%2FFrontend-Projects%2Fnext-js-end-to-end%2Fsrc%2Factions%2FEvents%2Findex.ts%22%2C%5B%22getEventsByCategory%22%2C%22AddNewEvent%22%2C%22getAllCategories%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/page": "rsc"
       }
     },
-    "b76562c0cfb2678094e0fd5becff7ad1604fde9c": {
+    "cf14f7ec206a36c8704da3c1bf74863f3d647c58": {
       "workers": {
-        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ferlandssonjoel%2FDesktop%2Fnext-js-end-to-end%2Fsrc%2Factions%2FEvents%2Findex.ts%22%2C%5B%22getAllCategories%22%2C%22getEventsByCategory%22%2C%22AddNewEvent%22%5D%5D%5D&__client_imported__=!"
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ferlandssonjoel%2FDocuments%2FProjects%2FFrontend-Projects%2Fnext-js-end-to-end%2Fsrc%2Factions%2FEvents%2Findex.ts%22%2C%5B%22getEventsByCategory%22%2C%22AddNewEvent%22%2C%22getAllCategories%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/page": "rsc"
       }
     },
-    "fa5d2ac91d840a20ae9ea5ef18aac974b0177cef": {
+    "f18de0976131af9eccf966e0102b3ebddc3bc4d6": {
       "workers": {
-        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ferlandssonjoel%2FDesktop%2Fnext-js-end-to-end%2Fsrc%2Factions%2FEvents%2Findex.ts%22%2C%5B%22getAllCategories%22%2C%22getEventsByCategory%22%2C%22AddNewEvent%22%5D%5D%5D&__client_imported__=!"
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Ferlandssonjoel%2FDocuments%2FProjects%2FFrontend-Projects%2Fnext-js-end-to-end%2Fsrc%2Factions%2FEvents%2Findex.ts%22%2C%5B%22getEventsByCategory%22%2C%22AddNewEvent%22%2C%22getAllCategories%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/page": "rsc"
@@ -26,5 +26,5 @@
     }
   },
   "edge": {},
-  "encryptionKey": "Pj38v9yKj1akKB631xcgvo/Voxq+22vFqRMJfSmLU2A="
+  "encryptionKey": "Q2SO6RBf6Wi86rwh2AotpaX5KhWb1Ld5kj849NVIXC0="
 }
