@@ -22,3 +22,24 @@ describe("Feature Events Display", () => {
     });
   });
 });
+
+describe("GitHub Login Test", () => {
+  it("should log in using GitHub", () => {
+    cy.visit("/");
+
+    cy.task("GitHubSocialLogin", {
+      username: Cypress.env("GITHUB_USERNAME"),
+      password: Cypress.env("GITHUB_PASSWORD"),
+      loginUrl: "http://localhost:3000/api/auth/signin/github",
+      headless: false,
+      loginSelector: 'button[data-cy="github-login"]',
+      postLoginSelector: ".navbar",
+    }).then(({ cookies }) => {
+      cookies.forEach((cookie) => {
+        cy.setCookie(cookie.name, cookie.value);
+      });
+
+      cy.reload();
+    });
+  });
+});
