@@ -19,7 +19,7 @@ export function Header() {
             <div
               style={{ color: "white", fontSize: "0.75rem", fontWeight: "200" }}
             >
-              prototype build v.0.1
+              prototype build v.0.00000001
             </div>
           </div>
           <Nav />
