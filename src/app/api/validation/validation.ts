@@ -6,7 +6,6 @@ export const EventSchema = z.object({
   image: z.string().url().min(1),
   description: z.string().min(1),
   video: z.string().url().min(1),
-  categories: z.array(z.string()),
 });
 
 export type EventFormData = z.infer<typeof EventSchema>;

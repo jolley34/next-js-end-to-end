@@ -26,7 +26,12 @@ export function Card({
           <div className={styles.card}>
             <div className={styles.cardWrapper}>
               <CountdownBar />
-              <img src={image} className={styles.img} alt="Event Image" />
+              <img
+                src={image}
+                className={styles.img}
+                data-cy="event-image"
+                alt="Event Image"
+              />
               <div className={styles.contentWrapper}>
                 <div className={styles.spaceBetween}>
                   <div

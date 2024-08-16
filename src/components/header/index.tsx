@@ -1,4 +1,3 @@
-import { Nav } from "../Nav";
 import styles from "./Header.module.css";
 
 export function Header() {
@@ -22,7 +21,6 @@ export function Header() {
               prototype build v.0.00000001
             </div>
           </div>
-          <Nav />
         </div>
       </div>
     </>

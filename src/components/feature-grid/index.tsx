@@ -2,15 +2,8 @@ import { db } from "@/prisma/db";
 import { Card } from "../Card";
 import { FeatureGridLayout } from "./layout";
 
-interface TypesProps {
-  id: string;
-}
-
-export default async function FeatureGrid({ id }: TypesProps) {
+export default async function FeatureGrid() {
   const events = await db.event.findMany({
-    where: {
-      id,
-    },
     include: {
       user: true,
     },

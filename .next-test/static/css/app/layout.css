@@ -67,6 +67,16 @@
 }.__className_36bd41 {font-family: '__Inter_36bd41', '__Inter_Fallback_36bd41';font-style: normal
 }
 
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/styles/GlobalStyles.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.GlobalStyles_body__acOoo {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #161616;
+}
+
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Header/Header.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
@@ -92,96 +102,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/SignInButton/SignInButton.module.css ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************/
-.SignInButton_button__Z35l9 {
-  background-color: rgba(0, 0, 0, 0.396);
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  color: white;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  transition: ease 0.3s;
-}
-
-.SignInButton_button__Z35l9:hover {
-  background-color: rgba(127, 127, 127, 0.424);
-}
-
-.SignInButton_buttonText__Zkivs {
-  font-weight: bold;
-}
-
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/SignOutButton/SignOutButton.module.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************/
-.SignOutButton_button__yA25f {
-  background-color: rgba(0, 0, 0, 0.396);
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  color: white;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  transition: ease 0.3s;
-}
-
-.SignOutButton_button__yA25f:hover {
-  background-color: rgba(127, 127, 127, 0.424);
-}
-
-.SignOutButton_buttonText__otSsh {
-  font-weight: bold;
-}
-
-/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/Nav/Nav.module.css ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************/
-.Nav_wrapper__8_Qtz {
-}
-
-.Nav_navbar__eS5_W {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: white;
-}
-
-.Nav_listItem__bLi3D {
-  background-color: rgba(0, 0, 0, 0.396);
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  transition: ease 0.3s;
-}
-
-.Nav_listItem__bLi3D:hover {
-  background-color: rgba(127, 127, 127, 0.424);
-}
-
-.Nav_search__c4rMJ {
-  background-color: rgba(0, 0, 0, 0.396);
-  border: none;
-  padding: 0.5rem;
-  border-radius: 10px;
-  color: white;
-}
-
-/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/styles/GlobalStyles.module.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************/
-.GlobalStyles_body__acOoo {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #161616;
 }
 

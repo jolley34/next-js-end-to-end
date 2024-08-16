@@ -17,15 +17,7 @@ model Event {
   video       String
   isFeatured  Boolean  @default(false)
 
-  categories Category[]
-  user       User       @relation(fields: [userId], references: [id])
-}
-
-model Category {
-  id   String @id @default(cuid())
-  name String @unique
-
-  events Event[]
+  user User @relation(fields: [userId], references: [id])
 }
 
 model User {

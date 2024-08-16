@@ -20,15 +20,16 @@ export async function AddNewEvent(data: EventFormData) {
   try {
     const session = await auth();
 
+    if (!session?.user?.id) {
+      throw new Error("User not authenticated");
+    }
+
     const newEvent = await db.event.create({
       data: {
         ...data,
         isFeatured: false,
-        categories: {
-          connect: data.categories.map((categoryId) => ({ id: categoryId })),
-        },
         user: {
-          connect: { id: session?.user.id },
+          connect: { id: session.user.id },
         },
       },
     });

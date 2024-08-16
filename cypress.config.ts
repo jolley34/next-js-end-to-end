@@ -9,6 +9,7 @@ export default defineConfig({
       config.env.GITHUB_PASSWORD = process.env.GITHUB_PASSWORD;
       on("task", {
         reseed: reseed,
+
         async GitHubSocialLogin(options) {
           try {
             if (!options.username || !options.password) {

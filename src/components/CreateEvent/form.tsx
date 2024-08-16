@@ -4,17 +4,11 @@ import { EventFormData } from "@/src/app/api/validation/validation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-interface Category {
-  id: string;
-  name: string;
-}
-
 interface Props {
   event?: EventFormData;
-  categories: Category[];
 }
 
-export default function EventForm({ categories }: Props) {
+export default function EventForm({}: Props) {
   const [imagePreview, setImagePreview] = useState<string | null>(null);
 
   const {
@@ -25,6 +19,7 @@ export default function EventForm({ categories }: Props) {
 
   const onSubmit = async (formData: EventFormData) => {
     await AddNewEvent(formData);
+    window.location.reload();
   };
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -114,34 +109,6 @@ export default function EventForm({ categories }: Props) {
       {errors.video && (
         <span style={{ color: "red" }}>{errors.video.message}</span>
       )}
-
-      {/* Category Select Input */}
-      <label style={{ color: "white" }}>Categories</label>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        {categories.map((category) => (
-          <label
-            key={category.id}
-            style={{ marginBottom: "0.5rem", color: "white" }}
-          >
-            <input
-              type="checkbox"
-              {...register("categories", {
-                required: "Please select at least one category",
-              })}
-              value={category.id}
-              style={{ marginRight: "0.5rem" }}
-            />
-            {category.name}
-          </label>
-        ))}
-        {errors.categories && (
-          <span
-            style={{ color: "red", fontSize: "0.8rem", marginTop: "0.2rem" }}
-          >
-            {errors.categories.message}
-          </span>
-        )}
-      </div>
 
       {/* Submit Button */}
       <button type="submit">Create Event</button>
